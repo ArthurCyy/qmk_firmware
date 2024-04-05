@@ -40,9 +40,6 @@ static void POWER_EnterSleep(void) {
     NVIC_SystemReset();
 }
 
-extern void ws2812_poweron(void);
-extern void ws2812_poweroff(void);
-
 static bool p_setup = false;
 static bool s_init = false;
 void ws2812_poweron(void) {
